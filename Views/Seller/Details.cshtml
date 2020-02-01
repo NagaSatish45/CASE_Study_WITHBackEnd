@@ -1,0 +1,41 @@
+﻿@model CaseStudy.Models.Seller
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+var photoPath = "~/images/" + (Model.PhotoPath ?? "targeting.png");
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Seller</h4>
+    <hr />
+
+    <div class="card-deck">
+      
+        <div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
+            <div class="card-header">
+                <h3>@Model.Sname</h3>
+
+
+
+            </div>
+            <div class="card-body">
+
+            
+            <img class="card-img-top imageThumbnail" src="@photoPath"
+                 asp-append-version="true" />
+            <h3>@Model.Semail</h3>
+            <h3>@Model.Saddress</h3>
+            <h3>@Model.Contactno</h3>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="home" asp-action="details" asp-route-id="@Model.SID" class="btn btn-primary m-1">View</a>
+                <a href="#" class="btn btn-primary m-1">Edit</a>
+                <a href="#" class="btn btn-danger m-1">Delete</a>
+            </div>
+        </div>
+        }
+    </div>
+</div>

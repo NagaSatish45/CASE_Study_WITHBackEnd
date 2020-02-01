@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body   >
+    <div class="navbar navbar-light bg-light" style="background-color:deeppink">
+        <div class="container">
+            <div class="navbar-header">
+
+                <h1 style="color:blue" class="align-content-start ">Welcome to  E-COMMERCE </h1>
+
+                <a class="btn-info" href="#">SHOPPING </a>
+
+
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+
+                    <ul class="navbar-nav flex-grow-1">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div style="background-color:black " >
+            <marquee class="jumbotron" behavior="scroll" direction="left" ><h1 style="text-decoration-color:aqua">GREAT INDIAN FESTIVAL STARTS FROM FEB 14....To Feb 20 </h1></marquee>
+        </div>
+     
+        @RenderBody()
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+        </div>
+</body>
+</html>
